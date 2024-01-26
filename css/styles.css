@@ -743,7 +743,8 @@ footer>div {
 }
 
 @media (max-width: 768px){
-    nav h1{
+    nav h1,
+    nav h1 a{
         font-size: 2rem;
         &::first-letter{
             font-size: 2.2rem;
@@ -885,19 +886,8 @@ footer>div {
 }
 
 @media (max-width: 425px){
-    .index header {
-        flex: 0 0 60vh;
-    }
-    
-    .header-bg {
-        height: 60vh;
-    }
-    
-    .header-bg > div{
-        height: 50vh;
-    }
-    
-    nav h1{
+    nav h1,
+    nav h1 a{
         font-size: 1.5rem;
         &::first-letter{
             font-size: 1.8rem;
@@ -954,12 +944,10 @@ footer>div {
 
     .index main>div {
         height: 25vh;
-        align-self: center;
-        position: absolute;
         padding: 1.5em;
         grid-template-columns: 100%;
         gap: 0;
-        top: 62vh;
+        top: 71vh;
         & h2{
             font-weight: 500;
             text-align: left;
@@ -1026,10 +1014,11 @@ footer>div {
 }
 
 @media (max-width: 375px){
-    nav h1{
+    nav h1,
+    nav h1 a{
         font-size: 1.2rem;
         &::first-letter{
-            font-size: 1.4rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -1052,7 +1041,7 @@ footer>div {
         padding: 0.5em 0.1em;
     }
 
-    main section figure {
+    .index main section figure {
         max-width: 300px;
         max-height: 25vh;
         & iframe {
