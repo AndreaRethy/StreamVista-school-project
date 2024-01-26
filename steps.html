@@ -31,7 +31,7 @@
     <!-- Contenido Principal -->
     <main>
         <!-- STEP 0 -->
-        <div class="step step0">
+        <div class="step step0 hidden">
             <figure>
                 <img src="img/popcorn.svg" alt="">
             </figure>
@@ -84,15 +84,16 @@
         </div>
 
         <!-- STEP 3 -->
-        <div class="step step3 hidden">
+        <div class="step step3">
             <article class="pc">
                 <p>STEP 2 OF 3</p>
                 <h2>Choose the plan that's right for you</h2>
                 <section>
-                    <div>
+                    <header>
                         <h2>Premium</h2>
                         <h3>4K + HDR</h3>
-                    </div>
+                        <p>&#10003;</p>
+                    </header>
                     <ul>
                         <li>
                             <p>Monthly price</p>
@@ -130,10 +131,11 @@
                 </section>
 
                 <section>
-                    <div>
+                    <header>
                         <h2>Standard</h2>
                         <h3>1080p</h3>
-                    </div>
+                        <p class="hidden">&#10003;</p>
+                    </header>
                     <ul>
                         <li>
                             <p>Monthly price</p>
@@ -170,6 +172,7 @@
                     <header>
                         <h2>Standard with ads</h2>
                         <h3>1080p</h3>
+                        <p class="hidden">&#10003;</p>
                     </header>
                     <ul>
                         <li>
