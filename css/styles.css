@@ -422,6 +422,33 @@ aside {
         color: var(--color-tertiary);
 }
 
+/* STEP 1 */
+.step1 ul li{
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 1rem;
+    color: #000;
+}
+.step1 h2{
+    font-size: 1.8rem;
+}
+.step1 ul li:last-child{
+    font-size: 1rem;
+    gap: 1rem;
+}
+.step ul li input[type="checkbox"]{
+    height: 25px;
+    width: 25px;
+    
+}
+.step1 ul li  input[type="email"],  input[type="password"]{
+    width: 100%;
+    max-width: 350px;
+    background-color: #fff;
+    backdrop-filter: none;
+    border: 1px solid #000;
+}
+
 /* STEP 3 */
 .step3{
     width: 100vw;
