@@ -778,6 +778,12 @@ footer>div {
     .step3>p:not(:first-child) {
             max-width: 600px;
      }
+
+     .step.step3 section {
+        &:first-of-type{
+            box-shadow: none;
+        }
+    }
 }
 @media (max-width: 1024px){
     nav{
