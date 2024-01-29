@@ -379,7 +379,7 @@ aside {
     width: 360px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: start; 
     justify-content: center; 
     text-align: left;
     margin: 4em auto;
@@ -387,6 +387,7 @@ aside {
     color: var(--color-primary);
     & figure {
         max-height: 15%;
+        align-self: center;
         & img {
             height: 100%;
             object-fit: cover;
@@ -397,6 +398,7 @@ aside {
     }
     &>p:first-of-type {
         font-size: 0.9375rem;
+        align-self: center;
     }
     & h2 {
         font-weight: 700;
@@ -889,6 +891,12 @@ footer>div {
     .step {
         align-items: start; 
         text-align: left;
+        & figure {
+            align-self: start;
+        }
+        &>p:first-of-type {
+            align-self: start;
+        }
     }
 }
 
