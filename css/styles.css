@@ -492,9 +492,6 @@ aside {
     flex-direction: column;
     border-radius: 20px;
     justify-content: space-between;
-    &:first-of-type{
-        box-shadow: 1px 1px 1px 1px var(--color-footer);
-    }
     & ul li {
         border-bottom: 1px solid #ccc;
         padding-bottom: 0.5em;
@@ -515,6 +512,20 @@ aside {
     ul li p:last-child {
         color: var(--bg-primary);
         font-size: 1.1rem;
+    }
+}
+
+.step.step3 .container {
+    box-shadow: none;
+    &>header>p {
+        display: none;
+    }
+}
+
+.step.step3 .selected {
+    box-shadow: 1px 1px 1px 1px var(--color-footer);
+    &>header>p {
+        display: block;
     }
 }
 

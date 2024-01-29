@@ -1,8 +1,10 @@
 
 // Cambiar steps
+// Declaración de variables
 const nextButtons = document.querySelectorAll('.next');
 const STEPS = document.querySelectorAll('.step');
 
+// Guardamos el index del botón y la aplicamos para hacer los cambios
 nextButtons.forEach((nextButton, index) => {
     nextButton.addEventListener('click', () =>{
         if (index > 0){
@@ -13,6 +15,25 @@ nextButtons.forEach((nextButton, index) => {
         sectionSeleccionada.classList.toggle('hidden');
         sectionSiguiente.classList.toggle('hidden');
     });
+});
+
+
+// PC TABS
+const contenedores = document.querySelectorAll('.container');
+
+// Función para cambiar selección
+const changeSelected = (evt) => {
+    // quitamos la clase 'selected' de todos los contenedores
+    contenedores.forEach(element => {
+        element.classList.remove('selected');
+    });
+    // agregamos la clase 'selected' al contenedor actual
+    evt.currentTarget.classList.add('selected');
+};
+
+// Asociamos el evento de clic a cada contenedor
+contenedores.forEach(contenedor => {
+    contenedor.addEventListener('click', (evento) => changeSelected(evento));
 });
 
 
