@@ -470,6 +470,7 @@ aside {
  }
 
 .step3 article {
+    margin: 0 auto;
     &>header{
         border-bottom: none;
         padding: 1em;
