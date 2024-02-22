@@ -78,13 +78,24 @@ form > fieldset{
             height: 3.5rem;
             border-radius: 4px;
         }
-& input[type="email"]{
-            background-color: rgba(0, 0, 0, 0.2);
+        & input[type="email"]{
+            background-color: rgba(0, 0, 0, 0.4);
             backdrop-filter: blur(5px);
+            color: var(--color-secondary);
             border: 1px solid var(--border-primary);
             font-size: 1rem;
             margin-right: 0.5rem;
             width: 450px;
+            &:focus {
+                background-color: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(5px);
+                color: var(--color-secondary);
+            }
+            &:active {
+                background-color: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(5px);
+                color: var(--color-secondary);
+            }
             &::placeholder{
                 color: #AEB9AF;
             }
@@ -93,8 +104,31 @@ form > fieldset{
             background-color: var(--color-tertiary);
             border: 1px solid var(--color-tertiary);
             color: var(--color-secondary);
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
+    }
+}
+
+input[type="email"]{
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    color: var(--color-secondary);
+    border: 1px solid var(--border-primary);
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    width: 450px;
+    &:focus {
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(5px);
+        color: var(--color-secondary);
+    }
+    &:active {
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(5px);
+        color: var(--color-secondary);
+    }
+    &::placeholder{
+        color: #AEB9AF;
     }
 }
 
@@ -682,7 +716,7 @@ aside .container {
 
 .contenido{
     border-top: 1px solid var(--bg-primary);
-    text-align: justify;
+    text-align: left;
     height: 0;
     overflow: hidden;
     transition: 0.5s;
@@ -739,6 +773,9 @@ footer>div {
     color: var(--color-footer);
     & a {
         color: var(--color-footer);
+        &:hover {
+            color: var(--color-tertiary);
+        }
     }
 }
 
