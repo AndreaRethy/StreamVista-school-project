@@ -3,17 +3,25 @@
 // Declaración de variables
 const nextButtons = document.querySelectorAll('.next');
 const STEPS = document.querySelectorAll('.step');
+const formEmail = document.querySelectorAll('input[type="email"]');
+const formPassword = document.querySelectorAll('input[type="password"]');
 
 // Guardamos el index del botón y la aplicamos para hacer los cambios
 nextButtons.forEach((nextButton, index) => {
     nextButton.addEventListener('click', () =>{
+        console.log(index);
         if (index > 0){
             document.querySelector('#signInLink').textContent = 'Sign Out';
         }
         let sectionSeleccionada = STEPS[index];
         let sectionSiguiente = STEPS[index +1];
-        sectionSeleccionada.classList.toggle('hidden');
-        sectionSiguiente.classList.toggle('hidden');
+        if (index !== 1){
+            sectionSeleccionada.classList.toggle('hidden');
+            sectionSiguiente.classList.toggle('hidden');
+        } else if (formEmail.value != "" && formPassword.value != ""){
+                sectionSeleccionada.classList.toggle('hidden');
+                sectionSiguiente.classList.toggle('hidden');
+        }
     });
 });
 
