@@ -79,7 +79,7 @@ form > fieldset{
             border-radius: 4px;
         }
         & input[type="email"]{
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.2);
             backdrop-filter: blur(5px);
             color: var(--color-secondary);
             border: 1px solid var(--border-primary);
@@ -108,30 +108,6 @@ form > fieldset{
         }
     }
 }
-
-input[type="email"]{
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-    color: var(--color-secondary);
-    border: 1px solid var(--border-primary);
-    font-size: 1rem;
-    margin-right: 0.5rem;
-    width: 450px;
-    &:focus {
-        background-color: rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(5px);
-        color: var(--color-secondary);
-    }
-    &:active {
-        background-color: rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(5px);
-        color: var(--color-secondary);
-    }
-    &::placeholder{
-        color: #AEB9AF;
-    }
-}
-
 
 nav {
     flex: 0 0 10vh;
@@ -367,6 +343,12 @@ aside {
         width: 350px;
         &::placeholder{
             color: #AEB9AF;
+        }
+        &:focus{
+            background-color: rgb(63, 63, 63);
+        }
+        &:active{
+            background-color: rgb(63, 63, 63);
         }
     }
     & input[type="submit"]{
